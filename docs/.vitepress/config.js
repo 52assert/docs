@@ -1,7 +1,15 @@
 export default {
     // title: '测试站点', //站点标题
     description: '一个vue3组件库',//mate标签description，多用于搜索引擎抓取摘要
+
     themeConfig: {
+        algolia: {
+            appId: 'G8HARRPHZM', // 需要替换
+            apiKey: '44f318a0d71b8df2b9911dd1f58b7b9a', // 需要替换
+            indexName: 'dowaydoc', // 需要替换
+            placeholder: '请输入关键词',
+            buttonText: '搜索',
+        },
         siteTitle: "测试站点",
         logo: "/logo.png",
         sidebar: {
