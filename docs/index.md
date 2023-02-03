@@ -4,9 +4,9 @@ layout: home
 hero:
   name: 多维知识库
   text: 随便写点啥.
-  tagline: 多维知识库
+  tagline: ""
   image:
-    src: /logo.png
+    src: /logo.svg
     alt: Kitty
   actions:
     - theme: brand

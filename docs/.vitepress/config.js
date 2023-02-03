@@ -10,32 +10,42 @@ export default {
             placeholder: '请输入关键词',
             buttonText: '搜索',
         },
-        siteTitle: "测试站点",
-        logo: "/logo.png",
+        siteTitle: "多维知识库",
+        logo: "/logo.svg",
+        // 侧边栏
         sidebar: {
             "/articles/": [
                 {
-                    text: "ERP文档",
+                    text: "SLS文档",
+                    //可折叠配置 默认展开 true不展开
+                    collapsed: false,
                     items: [
-                        {text: "销售订单相关", link: "/articles/test",},
-                        {text: "采购订单相关", link: "/articles/gulp的使用"},
+                        {text: "功能介绍", link: "/articles/sls/features",},
+                        {text: "FAQ", link: "/articles/sls/faq"},
                     ],
                 },
                 {
-                    text: "vue教程",
+                    text: "ERP文档",
+                    collapsed: true,
                     items: [
-                        {
-                            text: "pina和vuex",
-                            link: "/articles/pina和vuex",
-                        },
+                        // {text: "销售订单相关", link: "/articles/test",},
+                        // {text: "采购订单相关", link: "/articles/gulp的使用"},
+                    ],
+                },
+                {
+                    text: "WMS文档",
+                    collapsed: true,
+                    items: [
+                        {text: "pina和vuex", link: "/articles/pina和vuex",},
                     ],
                 },
             ]
         },
+        // 导航
         nav: [
-            {text: "文档", link: "/articles/test"},
+            {text: "指南", link: "/articles/sls/faq"},
             {text: "Test", link: "/test"},
-            {text: "gitee", link: "https://gitee.com/geeksdidi"},
+            {text: "gitee", link: "https://vitepress.vuejs.org/"},
             {
                 text: "Drop Menu",
                 items: [
