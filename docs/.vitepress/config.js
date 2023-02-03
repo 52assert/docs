@@ -1,5 +1,5 @@
 export default {
-    // title: '测试站点', //站点标题
+    title: '多维知识库', //站点标题
     description: '一个vue3组件库',//mate标签description，多用于搜索引擎抓取摘要
 
     themeConfig: {
@@ -12,6 +12,9 @@ export default {
         },
         siteTitle: "多维知识库",
         logo: "/logo.svg",
+        head:[
+            ['link', { rel: 'icon', href: '/favicon.ico' }]
+        ],
         // 侧边栏
         sidebar: {
             "/articles/": [
